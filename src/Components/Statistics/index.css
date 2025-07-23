@@ -1,0 +1,56 @@
+.user-stats-footer {
+  background-color: #DEECFB;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.user-stats-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-stats-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #063768;
+}
+
+.user-stats-footer h4 {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #063768;
+}
+
+.user-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.user-stat-card {
+  background-color: #7AB3EF;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-color: #063768;
+}
+
+.user-stat-number {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.user-stat-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .user-stats-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+}
