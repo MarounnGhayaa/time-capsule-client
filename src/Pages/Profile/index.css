@@ -98,7 +98,7 @@
 }
 
 .profile-error-message {
-  color: red;
+  color: rgb(116, 5, 5);
 }
 
 @media (max-width: 500px) {
