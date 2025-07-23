@@ -1,0 +1,48 @@
+.public-filters {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.public-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.public-filter-label {
+  font-weight: 600;
+  color: #063768;
+}
+
+.public-filter-select {
+  background-color: #DEECFB;
+  border: 1px solid #7AB3EF;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.public-filter-select:focus {
+  outline: none;
+  border-color: #063768;
+}
+
+@media (max-width: 768px) {
+    .public-filters {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .public-filter-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
