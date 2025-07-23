@@ -1,0 +1,230 @@
+.view-shared-body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #DEECFB;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #7AB3EF;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-shared-capsule-container {
+  position: relative;
+  background: #fff;
+  border: 2px solid #7AB3EF;
+  border-radius: 16px;
+  max-width: 640px;
+  width: 100%;
+  box-shadow: 0 12px 25px rgba(122, 179, 239, 0.35);
+  padding: 24px 32px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.view-shared-capsule-header {
+  background: #7AB3EF;
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(6, 55, 104, 0.25);
+}
+
+.view-shared-capsule-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.view-shared-capsule-emoji {
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.view-shared-capsule-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.view-shared-reveal-location-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.view-shared-content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f9fbff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 6px rgba(122, 179, 239, 0.15);
+  flex: 1;
+}
+
+.view-shared-section-label {
+  font-size: 15px;
+  color: #054a8a;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.view-shared-message-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #084a8a;
+  box-shadow: inset 0 0 10px rgba(122, 179, 239, 0.3);
+}
+
+.view-shared-tags-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.view-shared-tags-row .view-shared-content-section {
+  flex: none;
+  min-width: 140px;
+  padding: 12px 20px;
+  background: #7ab3ef;
+  color: white;
+  box-shadow: 0 3px 8px rgba(6, 55, 104, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 24px;
+  text-transform: capitalize;
+}
+
+.view-shared-color-display {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.view-shared-color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2.5px solid #054a8a;
+  box-shadow: 0 3px 8px rgba(6, 55, 104, 0.4);
+}
+
+.view-shared-color-code {
+  font-weight: 700;
+  font-size: 15px;
+  color: #054a8a;
+  user-select: text;
+}
+
+.view-shared-image-preview {
+  padding: 24px;
+  box-shadow: 0 8px 18px rgba(122, 179, 239, 0.25);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.view-shared-image-preview img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 350px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background: #f1f5fa;
+}
+
+.view-shared-attachment-container {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(6, 55, 104, 0.15);
+  text-align: center;
+}
+
+.view-shared-attachment-container audio {
+  width: 100%;
+  height: 48px;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(6, 55, 104, 0.4);
+}
+
+.view-shared-attachment-container p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #054a8a;
+}
+
+.view-shared-tag-input {
+  background: #7ab3ef;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(6, 55, 104, 0.5);
+  user-select: none;
+}
+
+.reveal-location-section .view-shared-tag-input {
+  background: transparent;
+  box-shadow: none;
+  color: #064273;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 600;
+  user-select: text;
+}
+
+.view-shared-location-section iframe {
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+@media (max-width: 680px) {
+  .view-shared-tags-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .view-shared-tags-row .view-shared-content-section {
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .view-shared-image-preview,
+  .view-shared-attachment-container {
+    padding: 16px;
+  }
+
+  .view-shared-reveal-location-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
