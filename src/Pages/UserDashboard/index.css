@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-body {
+  line-height: 1.6;
+  color: black;
+  min-height: 100vh;
+  background-color: #DEECFB;
+}
+
+.user-main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.user-welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.user-welcome-text {
+  font-size: 1.125rem;
+  color: black;
+}
+
+.user-capsules-section {
+  margin-bottom: 3rem;
+}
+
+.user-section-header {
+  margin-bottom: 1.5rem;
+}
+
+.user-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-section-title h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.user-emoji-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.user-lock { font-size: 1.2rem; margin-left: 0.5rem; }
+.user-calendar { margin-right: 0.5rem; }
+.user-globe { font-size: 1.2rem; }
+.user-export { font-size: 1rem; margin-right: 0.25rem; }
+
+.user-text-icon.user-plus {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.user-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.user-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #063768;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-action-btn:hover {
+  background-color: #7AB3EF;
+  color: #063768;
+}
+
+@media (max-width: 768px) {
+  .user-main-content { padding: 1rem; }
+  .user-action-buttons { flex-direction: column; align-items: center; }
+  .user-action-btn { width: 100%; max-width: 300px; justify-content: center; }
+}
